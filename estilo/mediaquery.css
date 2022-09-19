@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #btn-mobile {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul li a:hover {
+        color: var(--primary-color);
+        padding-bottom: 2.2rem;
+        border-bottom: 0.3rem solid var(--primary-color);
+        font-weight: 500;
+    }
+
+    #menu {
+        display: flex;
+        list-style: none;
+        width: 37.4rem;
+        justify-content: space-between;
+    }
+
+    
+}
