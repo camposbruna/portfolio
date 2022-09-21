@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>Bruna Campos</title>
+</head>
+<body>
+    <header id="header">
+        <a id="logo" href="#home"><img src="icons/logotipo-png.png" alt="Logotipo pessoal Bruna Campos"></a>
+        <span id="burguer" onclick="abrirMenu()"><img src="icons/menu.svg" alt="Menu"></span>
+        <nav id="itens">
+            <ul id="menu">
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Formação</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <!--
+            <a href="#"><img src="icons/menu.svg" alt="Abrir menu"></a>
+            -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container_img_perfil"><img id="img_perfil" src="assets/img-pessoal-background.png" alt="Mulher branca com cabelos castanhos, usando óculos."></div>
+            <div class="home-content">
+                <h1>Bruna Campos</h1>
+                <h2>Desenvolvedora Front-end</h2>
+                <ul class="midias_sociais">
+                    <li><a href="https://github.com/camposbruna" target="_blank"><img src="icons/icon-github.svg" alt="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/camposjbruna/" target="_blank"><img src="icons/icon-linkedin.svg" alt="Linkedin"></a></li>
+                    <li><a href="mailto:camposjbruna@gmail.com"><img src="icons/icon-email.svg" alt="E-mail"></a></li>
+                </ul>
+            <a class="btn-download" href="#" target="_blank">Download CV<img src="icons/download.svg" alt="Download Currículo"></a>
+            </div>          
+        </section>
+
+        <div class="divisoria-1"></div>
+
+        <section id="portfolio">
+            <div class="container">
+                <h1>Portfólio</h1>
+            </div>
+            <div class="container">
+                <a href="#" class="content-projects">
+                    <img src="assets/portfolio-em-desenvolvimento.png" alt="Projeto Android">
+                    <h2>Título Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Nulla, quod eos suscipit quas repellat enim in nostrum illo nesciunt modi reprehenderit sequi!</p>
+                </a>
+                <hr>
+                <a href="#" class="content-projects">
+                    <img src="assets/portfolio-em-desenvolvimento.png" alt="Projeto Android">
+                    <h2>Título Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Nulla, quod eos suscipit quas repellat enim in nostrum illo nesciunt modi reprehenderit sequi!</p>
+                </a>
+                <hr>
+                <a href="#" class="content-projects">
+                    <img src="assets/portfolio-em-desenvolvimento.png" alt="Projeto Android">
+                    <h2>Título Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Nulla, quod eos suscipit quas repellat enim in nostrum illo nesciunt modi reprehenderit sequi!</p>
+                </a>
+                <hr>
+                <a href="#" class="content-projects">
+                    <img src="assets/portfolio-em-desenvolvimento.png" alt="Projeto Android">
+                    <h2>Título Projeto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Nulla, quod eos suscipit quas repellat enim in nostrum illo nesciunt modi reprehenderit sequi!</p>
+                </a>
+                <a href="#" id="veja_mais">Veja mais<img src="icons/arrow-right-black.svg" alt="Veja mais"></a>
+
+            </div>
+        </section>
+
+        <div class="divisoria-2"></div>
+
+        <section id="experiencia">
+            <h1>Experiência</h1>
+            <div class="container-experience">
+                <div class="cabecalho-container">
+                    <img class="logo-empresa" src="assets/prefeitura-cocal-do-sul-logo-p.png" alt="Logo do município de Cocal do Sul">
+                    <div>
+                        <h2>Secretária Escolar</h2>
+                        <h2>Prefeitura Municipal de Cocal do Sul</h2>
+                        <h3>Mar 2018 - Presente</h3>
+                    </div>
+                   <img class="icon-arrow-down" src="icons/arrow-down.svg" alt="Ver as funções desempenhadas" onclick="mostrarListaAtividades1()">
+                </div>
+                <ul id="emprego1">
+                    <li>Nomeada através de concurso público;</li>
+                    <li>Atendimento à comunidade escolar;</li>
+                    <li>Coordeno atividades referentes à matrícula,
+                        rematrícula e transferência;</li>
+                    <li>Mantenho o sistema de gestão atualizado;</li>
+                    <li>Elaboro relatórios, atas de reuniões e ofícios.</li>
+                </ul>
+            </div>
+
+
+            <div class="container-experience">
+                <div class="cabecalho-container">
+                    <img class="logo-empresa" src="assets/balneario-rincao_logo-p.png" alt="Logo do município de Cocal do Sul">
+                    <div>
+                        <h2>Estágio em Engenharia Civil</h2>
+                        <h2>Prefeitura Municipal de Balneário Rincão</h2>
+                        <h3>Jan 2015 - Out 2015
+                        </h3>
+                    </div>
+                   <img class="icon-arrow-down" src="icons/arrow-down.svg" alt="Ver as funções desempenhadas" onclick="mostrarListaAtividades2()">
+                </div>
+                <ul id="emprego2">
+                    <li>Desenvolvimento de projetos;</li>
+                    <li>Auxiliar na elaboração de orçamentos;</li>
+                    <li>Fiscalização e medição das obras.</li>
+                </ul>
+            </div>
+
+
+            <div class="container-experience">
+                <div class="cabecalho-container">
+                    <img class="logo-empresa" src="assets/pepa-distribuidora-logo-p.png" alt="Logo do município de Cocal do Sul">
+                    <div>
+                        <h2>Analista de Marketing</h2>
+                        <h2>Pepa Distribuidora</h2>
+                        <h3>Ago 2012 - Ago 2014</h3>
+                    </div>
+                   <img class="icon-arrow-down" src="icons/arrow-down.svg" alt="Ver as funções desempenhadas" onclick="mostrarListaAtividades3()">
+                </div>
+                <ul id="emprego3">
+                    <li>Desenvolvimento de layouts para encartes
+                        promocionais, catálogos e e-mail marketing;</li>
+                    <li>Fotografia de produtos e edição de fotos;</li>
+                    <li>Atualização constante do site.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="divisoria-2"></div>
+
+        <section id="skills">
+
+        </section>
+
+        <section id="contato">
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
