@@ -62,11 +62,19 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 400;
+    font-family: var(--fonte-destaque);
 }
 
 p {
-    font-weight: 275;
+    font-family: var(--fonte-destaque);
+    font-weight: 300;
     font-size: 1.4rem;
+}
+
+.container-sections {
+    width: 32.7rem;
+    margin: auto;
+    padding: 4.5rem 0;
 }
 /*----------------------- MENU -----------------------*/
 
@@ -129,8 +137,6 @@ header.scroll {
 
 section#home {
     padding-top: 11.8rem;
-    margin-bottom: 4.5rem;
-
 }
 
 div.container_img_perfil {
@@ -162,10 +168,11 @@ div.home-content >  ul.midias_sociais {
     align-items: center;
     margin-bottom: 3.5rem;
     list-style-type: none;
+    transition: transform .3s;
 }
 
 div.home-content >  ul.midias_sociais> li:hover {
-    filter: invert(18%) sepia(8%) saturate(2000%) brightness(100%) contrast(80%);
+    transform: scale(1.1);
 }
 
 section#home > div.home-content > h1 {
@@ -210,19 +217,14 @@ a.btn-download:hover {
 /*----------------------- PORTFÓLIO -----------------------*/
 section#portfolio {
     background-color: white;
-    padding: 4.5rem 0;
+    width: 100vw;
 }
 
-section#portfolio > div.container {
-    width: 32.7rem;
-    margin: auto;
-}
-
-section#portfolio > div.container > img {
+section#portfolio > div > img {
     margin-bottom: 4.5rem;
 }
 
-div.container > hr {
+div > hr {
     margin: 4.5rem 0rem;
     height: 2px;
     border: none;
@@ -234,7 +236,7 @@ a#veja_mais {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 a#veja_mais > img {
@@ -248,13 +250,8 @@ a#veja_mais:hover {
 
 
 /*----------------------- EXPERIÊNCIA  -----------------------*/
-section#experiencia {
-    width: 32.7rem;
-    margin: auto;
-    padding: 4.5rem 0;
-}
 
-div.container-experience {
+section#experiencia > div.container-experience {
     margin-bottom: 3.5rem;
 }
 
@@ -268,7 +265,7 @@ div.container-experience > div.cabecalho-container {
     border-radius: .6rem .6rem 0 0;
 }
 
-div.cabecalho-container > img.logo-empresa {
+.logo-empresa {
     width: 4.8rem;
     height: 4.8rem;
     border: .3rem solid white;
@@ -327,3 +324,116 @@ div.container-experience > ul > li::before {
     font-weight: 500;
     color: #9251F7;
 }
+
+
+/*-------------------------- ANIMATION --------------------------*/
+/* section#home > div.container_img_perfil {
+    animation: fromTop .7s .2s backwards;
+}
+
+section#home > div.home-content {
+    animation: fromBottom .7s .2s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+} */
+
+/*--------------------------- FORMAÇÃO ---------------------------*/
+section#formacao {
+    background-color: white;
+}
+
+section#formacao > h1 {
+    width: 32.7rem;
+    margin: auto;
+    padding-top: 4.5rem;
+}
+
+section#formacao > div.container-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+}
+
+div.card-formacao {
+    background-color: #F7F9FC;
+    height: 22.4rem;
+    width: 15.8rem;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+div.card-formacao:nth-child(1) {
+    border-radius: .8rem 0 0 0;
+}
+
+div.card-formacao:nth-child(2) {
+    border-radius: 0 .8rem 0 0 ;
+}
+
+div.card-formacao:nth-child(3) {
+    border-radius: 0 0 0 .8rem;
+}
+
+div.card-formacao:nth-child(4) {
+    border-radius: 0 0 .8rem 0;
+}
+
+div.card-formacao > div {
+    text-align: left;
+}
+
+div.card-formacao > div > h2,
+div.card-formacao > div > p {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+div.card-formacao > div > h2 {
+    color: var(--primary-color);
+}
+
+div.card-formacao > div > p {
+    color: var(--dark_gray);
+    margin-bottom: .7rem;
+}
+
+div.card-formacao > img.status {
+    margin: 0;
+}
+
+
+
+div.card-formacao > div.date-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+div.card-formacao > div.date-status > p {
+    font-size: .8rem;
+    font-weight: 400;
+
+}
+
